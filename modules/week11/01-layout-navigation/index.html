@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>11.1 Layout &amp; Navigation | MAD9135</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="HTML5 App Development">
+    <link rel="preload" href="/F2020/assets/css/0.styles.cc1da3e7.css" as="style"><link rel="preload" href="/F2020/assets/js/app.71c50f4b.js" as="script"><link rel="preload" href="/F2020/assets/js/2.ad437195.js" as="script"><link rel="preload" href="/F2020/assets/js/37.9d876e07.js" as="script"><link rel="preload" href="/F2020/assets/js/6.2620568a.js" as="script"><link rel="prefetch" href="/F2020/assets/js/10.c2d815ec.js"><link rel="prefetch" href="/F2020/assets/js/11.02a0369f.js"><link rel="prefetch" href="/F2020/assets/js/12.3bf04f72.js"><link rel="prefetch" href="/F2020/assets/js/13.1c6e5c32.js"><link rel="prefetch" href="/F2020/assets/js/14.5d381c06.js"><link rel="prefetch" href="/F2020/assets/js/15.719e0a65.js"><link rel="prefetch" href="/F2020/assets/js/16.4f84fc00.js"><link rel="prefetch" href="/F2020/assets/js/17.02eb0c88.js"><link rel="prefetch" href="/F2020/assets/js/18.1b02271c.js"><link rel="prefetch" href="/F2020/assets/js/19.09648475.js"><link rel="prefetch" href="/F2020/assets/js/20.87442cf4.js"><link rel="prefetch" href="/F2020/assets/js/21.6acc8fc8.js"><link rel="prefetch" href="/F2020/assets/js/22.5bbfc680.js"><link rel="prefetch" href="/F2020/assets/js/23.8c578ce5.js"><link rel="prefetch" href="/F2020/assets/js/24.cb7a00dd.js"><link rel="prefetch" href="/F2020/assets/js/25.cbff6da5.js"><link rel="prefetch" href="/F2020/assets/js/26.c16a249a.js"><link rel="prefetch" href="/F2020/assets/js/27.167b7c92.js"><link rel="prefetch" href="/F2020/assets/js/28.0eda0394.js"><link rel="prefetch" href="/F2020/assets/js/29.451391d8.js"><link rel="prefetch" href="/F2020/assets/js/3.b1fd2577.js"><link rel="prefetch" href="/F2020/assets/js/30.b13b96b7.js"><link rel="prefetch" href="/F2020/assets/js/31.1c4f6cb4.js"><link rel="prefetch" href="/F2020/assets/js/32.b4b69cff.js"><link rel="prefetch" href="/F2020/assets/js/33.739c7797.js"><link rel="prefetch" href="/F2020/assets/js/34.03aed1d9.js"><link rel="prefetch" href="/F2020/assets/js/35.85081de8.js"><link rel="prefetch" href="/F2020/assets/js/36.22504173.js"><link rel="prefetch" href="/F2020/assets/js/38.eeda1499.js"><link rel="prefetch" href="/F2020/assets/js/39.11489612.js"><link rel="prefetch" href="/F2020/assets/js/4.cc77419a.js"><link rel="prefetch" href="/F2020/assets/js/40.cffceb2a.js"><link rel="prefetch" href="/F2020/assets/js/41.bd24dd52.js"><link rel="prefetch" href="/F2020/assets/js/42.00c7d473.js"><link rel="prefetch" href="/F2020/assets/js/43.cdd77206.js"><link rel="prefetch" href="/F2020/assets/js/44.98bddbe7.js"><link rel="prefetch" href="/F2020/assets/js/45.5490fcb1.js"><link rel="prefetch" href="/F2020/assets/js/46.37e77bac.js"><link rel="prefetch" href="/F2020/assets/js/47.f0e1e7ad.js"><link rel="prefetch" href="/F2020/assets/js/48.5b6b9e75.js"><link rel="prefetch" href="/F2020/assets/js/49.818493e4.js"><link rel="prefetch" href="/F2020/assets/js/5.722d8314.js"><link rel="prefetch" href="/F2020/assets/js/50.f9160a1e.js"><link rel="prefetch" href="/F2020/assets/js/51.23445ddd.js"><link rel="prefetch" href="/F2020/assets/js/52.74b403b6.js"><link rel="prefetch" href="/F2020/assets/js/53.59821ac2.js"><link rel="prefetch" href="/F2020/assets/js/54.44362052.js"><link rel="prefetch" href="/F2020/assets/js/55.d6947e6e.js"><link rel="prefetch" href="/F2020/assets/js/56.fd062c7c.js"><link rel="prefetch" href="/F2020/assets/js/57.bdca367e.js"><link rel="prefetch" href="/F2020/assets/js/58.90d58982.js"><link rel="prefetch" href="/F2020/assets/js/59.1a925b68.js"><link rel="prefetch" href="/F2020/assets/js/60.2b1d5330.js"><link rel="prefetch" href="/F2020/assets/js/61.f566edd7.js"><link rel="prefetch" href="/F2020/assets/js/62.f836ae34.js"><link rel="prefetch" href="/F2020/assets/js/63.f34d8438.js"><link rel="prefetch" href="/F2020/assets/js/64.be26bf42.js"><link rel="prefetch" href="/F2020/assets/js/65.5b33fabd.js"><link rel="prefetch" href="/F2020/assets/js/66.38722f0c.js"><link rel="prefetch" href="/F2020/assets/js/67.bc61efe9.js"><link rel="prefetch" href="/F2020/assets/js/68.3cf6e246.js"><link rel="prefetch" href="/F2020/assets/js/69.8fd9a7bb.js"><link rel="prefetch" href="/F2020/assets/js/7.549e4e32.js"><link rel="prefetch" href="/F2020/assets/js/70.b41f8caf.js"><link rel="prefetch" href="/F2020/assets/js/71.a96d1c60.js"><link rel="prefetch" href="/F2020/assets/js/72.04d70935.js"><link rel="prefetch" href="/F2020/assets/js/73.de491df5.js"><link rel="prefetch" href="/F2020/assets/js/74.e5ee8a9e.js"><link rel="prefetch" href="/F2020/assets/js/75.6d2e2098.js"><link rel="prefetch" href="/F2020/assets/js/76.26d3e621.js"><link rel="prefetch" href="/F2020/assets/js/77.5522d813.js"><link rel="prefetch" href="/F2020/assets/js/78.660d4301.js"><link rel="prefetch" href="/F2020/assets/js/79.e34d1770.js"><link rel="prefetch" href="/F2020/assets/js/8.cd8d51b1.js"><link rel="prefetch" href="/F2020/assets/js/9.a7d15d43.js">
+    <link rel="stylesheet" href="/F2020/assets/css/0.styles.cc1da3e7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/F2020/" class="home-link router-link-active"><!----> <span class="site-name">MAD9135</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/F2020/overview/" class="nav-link">
+  Overview
+</a></div><div class="nav-item"><a href="/F2020/modules/" class="nav-link router-link-active">
+  Modules
+</a></div><div class="nav-item"><a href="/F2020/deliverables/" class="nav-link">
+  Assignments
+</a></div><div class="nav-item"><a href="/F2020/resources/" class="nav-link">
+  Resources
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/F2020/overview/" class="nav-link">
+  Overview
+</a></div><div class="nav-item"><a href="/F2020/modules/" class="nav-link router-link-active">
+  Modules
+</a></div><div class="nav-item"><a href="/F2020/deliverables/" class="nav-link">
+  Assignments
+</a></div><div class="nav-item"><a href="/F2020/resources/" class="nav-link">
+  Resources
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Introduction</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Content Modules</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/F2020/modules/week1/01-javascript-review/" class="sidebar-link">1.1 JavaScript Review</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/F2020/modules/week1/02-dom-apis/" class="sidebar-heading clickable"><span>1.2 DOM APIs Review</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/F2020/modules/week2/01-data-structures/" class="sidebar-link">2.1 JavaScript Data Types</a></li><li><a href="/F2020/modules/week2/02-modules-promises/" class="sidebar-link">2.2 Modules and Promises</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/F2020/modules/week3/01-what-is-react/" class="sidebar-heading clickable"><span>3.1 What is React?</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/F2020/modules/week3/02-react-tooling/" class="sidebar-heading clickable"><span>3.2 React Tooling</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/F2020/modules/week4/01-components-props/" class="sidebar-link">4.1 Components &amp; Props</a></li><li><a href="/F2020/modules/week4/02-component-state/" class="sidebar-link">4.2 State Management</a></li><li><a href="/F2020/modules/week5/01-hooks-weather/" class="sidebar-link">5.1 Hooks: State &amp; AJAX</a></li><li><a href="/F2020/modules/week5/02-react-router/" class="sidebar-link">5.2 Navigation</a></li><li><a href="/F2020/modules/week6/01-context/" class="sidebar-link">6.1 React Context</a></li><li><a href="/F2020/modules/week6/02-production-deployment/" class="sidebar-link">6.2 Production Deployment</a></li><li><a href="/F2020/" aria-current="page" class="sidebar-link">7.1 Forms &amp; Animation</a></li><li><a href="/F2020/" aria-current="page" class="sidebar-link">7.2 Styling</a></li><li><a href="/F2020/modules/break-week/" class="sidebar-link">Break Week</a></li><li><a href="/F2020/modules/week8/01-react-design-patterns/" class="sidebar-link">8.1 Advance Features</a></li><li><a href="/F2020/modules/week8/02-working-in-teams/" class="sidebar-link">8.2 Working in teams</a></li><li><a href="/F2020/modules/week9/01-pwa-review/" class="sidebar-link">9.1 PWA Review</a></li><li><a href="/F2020/modules/week9/02-react-pwa/" class="sidebar-link">9.2 PWAs with React</a></li><li><a href="/F2020/modules/week10/01-hello-react-native/" class="sidebar-link">10.1 React Native with Expo</a></li><li><a href="/F2020/modules/week10/02-the-same-but-different/" class="sidebar-link">10.2 What's Different</a></li><li><a href="/F2020/modules/week11/01-layout-navigation/" aria-current="page" class="active sidebar-link">11.1 Layout &amp; Navigation</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/F2020/modules/week11/01-layout-navigation/#safe-area-context" class="sidebar-link">Safe Area Context</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/F2020/modules/week11/01-layout-navigation/#with-react-navigation-header" class="sidebar-link">With React Navigation Header</a></li></ul></li><li class="sidebar-sub-header"><a href="/F2020/modules/week11/01-layout-navigation/#routing-navigation" class="sidebar-link">Routing &amp; Navigation</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/F2020/modules/week11/01-layout-navigation/#install-dependencies" class="sidebar-link">Install dependencies</a></li><li class="sidebar-sub-header"><a href="/F2020/modules/week11/01-layout-navigation/#hello-react-navigation" class="sidebar-link">Hello React Navigation</a></li></ul></li><li class="sidebar-sub-header"><a href="/F2020/modules/week11/01-layout-navigation/#lab-exercise" class="sidebar-link">Lab Exercise</a></li><li class="sidebar-sub-header"><a href="/F2020/modules/week11/01-layout-navigation/#resources" class="sidebar-link">Resources</a></li></ul></li><li><a href="/F2020/modules/week11/02-nested-navigation/" class="sidebar-link">11.2 Nested Navigation</a></li><li><a href="/F2020/modules/week12/01-component-libraries/" class="sidebar-link">12.1 React Native Components</a></li><li><a href="/F2020/modules/week12/02-context-themes/" class="sidebar-link">12.2 React Native Styling</a></li><li><a href="/F2020/" aria-current="page" class="sidebar-link">13.1 Remote Data</a></li><li><a href="/F2020/" aria-current="page" class="sidebar-link">13.2 Production Deployment</a></li><li><a href="/F2020/" aria-current="page" class="sidebar-link">14.1 Final Projects</a></li><li><a href="/F2020/" aria-current="page" class="sidebar-link">14.2 Final Projects</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/F2020/deliverables/" class="sidebar-heading clickable"><span>Deliverables</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><header><div class="section-title">
+    
+  </div> <h1>11.1 Layout &amp; Navigation</h1></header> <p>In this module we will look focus on <a href="https://docs.expo.io/guides/routing-and-navigation/" target="_blank" rel="noopener noreferrer">routing &amp; navigation<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>, or &quot;moving between screens&quot; in your mobile app. But first we should address an important layout issue.</p> <h2 id="safe-area-context"><a href="#safe-area-context" class="header-anchor">#</a> Safe Area Context</h2> <p>The core React Native project provides a <code>&lt;SafeAreaView /&gt;</code> component to help keep you application content from being obscured by sensor notches or status bars. However, it only works with iOS 11+. Fortunately, there is a community developed package that provides consistent support across all iOS, Android, and Web target deployments. It is called <a href="https://docs.expo.io/versions/latest/sdk/safe-area-context/" target="_blank" rel="noopener noreferrer">react-native-safe-area-context<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> and Expo provides an optimized installer ...</p> <div class="language-bash extra-class"><pre class="language-bash"><code>expo <span class="token function">install</span> react-native-safe-area-context
+</code></pre></div><p>As its name implies this module uses React's Context API and you will need to wrap your top App level JSX component with the <code>&lt;SafeAreaProvider&gt;</code> component imported from <code>react-native-safe-area-context</code>. Then wrap each of your view (screen) components with the <code>&lt;SafeAreaView&gt;</code> component imported from <code>react-native-safe-area-context</code> – not the one from <code>react-native</code>.</p> <h3 id="with-react-navigation-header"><a href="#with-react-navigation-header" class="header-anchor">#</a> With React Navigation Header</h3> <p>When using the <code>&lt;SafeAreaView&gt;</code> component with React Navigation's default header component, you will see extra unwanted padding below the header. To correct this, set the <code>edges</code> prop on the <code>&lt;SafeAreaView&gt;</code> component to exclude the top edge of the device ...</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>SafeAreaView<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-native-safe-area-context'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">Demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SafeAreaView</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>flex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token attr-name">edges</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span><span class="token string">'right'</span><span class="token punctuation">,</span> <span class="token string">'bottom'</span><span class="token punctuation">,</span> <span class="token string">'left'</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token punctuation">{</span><span class="token comment">/* rest of your JSX content */</span><span class="token punctuation">}</span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SafeAreaView</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="routing-navigation"><a href="#routing-navigation" class="header-anchor">#</a> Routing &amp; Navigation</h2> <p><a href="https://reactnavigation.org/" target="_blank" rel="noopener noreferrer">React Navigation<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> is the most popular navigation library in the React Native ecosystem and it is maintained by Expo, so it's guaranteed to work great in your Expo managed apps.</p> <p>There are three common modes for mobile application navigation: stacks, tabs, and drawers. The React Navigation library supports all three of these modes and they can be used in combination (see <a href="https://reactnavigation.org/docs/nesting-navigators" target="_blank" rel="noopener noreferrer">nested navigation<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>).</p> <h3 id="install-dependencies"><a href="#install-dependencies" class="header-anchor">#</a> Install dependencies</h3> <p>The React Navigation library is divided into several modules. A core module and separate modules for each routing mode. It also relies on some peer dependencies. Start by installing the core library.</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> @react-navigation/native
+</code></pre></div><p>Now add the peer dependencies.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>expo <span class="token function">install</span> react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+</code></pre></div><p>After this you need to add the module for the type of navigation you want to use in your app. For our lab demo, we will use the familiar <strong>stack</strong> navigation - this works similarly to how the <strong>history API</strong> works in the browser.</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> @react-navigation/stack
+</code></pre></div><h3 id="hello-react-navigation"><a href="#hello-react-navigation" class="header-anchor">#</a> Hello React Navigation</h3> <p>Lets build a very simple React Native app with Expo and React Navigation. To keep things simple, it will have just three pages and very little content.</p> <h4 id="initialize-a-new-project"><a href="#initialize-a-new-project" class="header-anchor">#</a> Initialize a new project</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>expo init hello-nav
+</code></pre></div><p>Then add the React Navigation modules as per the instructions above.</p> <h4 id="create-three-simple-page-components"><a href="#create-three-simple-page-components" class="header-anchor">#</a> Create three simple page components</h4> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> View<span class="token punctuation">,</span> Text <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-native'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">HomeScreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">View</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> flex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> alignItems<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span> justifyContent<span class="token operator">:</span> <span class="token string">'center'</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Text</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">Home Screen</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Text</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">View</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> View<span class="token punctuation">,</span> Text <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-native'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">AboutScreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">View</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> flex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> alignItems<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span> justifyContent<span class="token operator">:</span> <span class="token string">'center'</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Text</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">About Screen</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Text</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">View</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> View<span class="token punctuation">,</span> Text <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-native'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">ContactScreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">View</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> flex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> alignItems<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span> justifyContent<span class="token operator">:</span> <span class="token string">'center'</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Text</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">Contact Screen</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Text</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">View</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="the-navigationcontainer"><a href="#the-navigationcontainer" class="header-anchor">#</a> The NavigationContainer</h4> <p>Similar to the <code>&lt;BrowserRouter&gt;</code> component that we used from React Router, the <code>&lt;NavigationContainer&gt;</code> component provides the navigation state management context and usually wraps the main App component's JSX.</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> NavigationContainer <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@react-navigation/native'</span>
+
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">NavigationContainer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">NavigationContainer</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App
+</code></pre></div><h4 id="create-a-stack-navigator"><a href="#create-a-stack-navigator" class="header-anchor">#</a> Create a stack navigator</h4> <p>To use the stack navigator import the <code>createStackNavigator</code> function. When invoked, it returns on object with two properties containing React components: <code>Screen</code> and <code>Navigator</code>.</p> <p>The routes are defined by placing the <code>Screen</code> components as children to the <code>Navigator</code> component in your JSX markup.</p> <p>Update the App.js component to look like this ...</p> <div class="language-jsx extra-class"><div class="highlight-lines"><br><br><div class="highlighted"> </div><div class="highlighted"> </div><br><div class="highlighted"> </div><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br></div><pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> NavigationContainer <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@react-navigation/native'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStackNavigator <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@react-navigation/stack'</span>
+<span class="token keyword">import</span> HomeScreen <span class="token keyword">from</span> <span class="token string">'./components/HomeScreen'</span>
+
+<span class="token keyword">const</span> Stack <span class="token operator">=</span> <span class="token function">createStackNavigator</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">NavigationContainer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Stack.Navigator</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Stack.Screen</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Home<span class="token punctuation">&quot;</span></span> <span class="token attr-name">component</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>HomeScreen<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Stack.Navigator</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">NavigationContainer</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App
+</code></pre></div><p>OK, now add routes for the other two screens.</p> <details class="custom-block details"><summary>Solution: Try yourself before you look</summary> <div class="language-jsx extra-class"><div class="highlight-lines"><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br></div><pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> NavigationContainer <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@react-navigation/native'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStackNavigator <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@react-navigation/stack'</span>
+<span class="token keyword">import</span> HomeScreen <span class="token keyword">from</span> <span class="token string">'./components/HomeScreen'</span>
+<span class="token keyword">import</span> AboutScreen <span class="token keyword">from</span> <span class="token string">'./components/AboutScreen'</span>
+<span class="token keyword">import</span> ContactScreen <span class="token keyword">from</span> <span class="token string">'./components/ContactScreen'</span>
+
+<span class="token keyword">const</span> Stack <span class="token operator">=</span> <span class="token function">createStackNavigator</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">NavigationContainer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Stack.Navigator</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Stack.Screen</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Home<span class="token punctuation">&quot;</span></span> <span class="token attr-name">component</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>HomeScreen<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Stack.Screen</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>About<span class="token punctuation">&quot;</span></span> <span class="token attr-name">component</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>AboutScreen<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Stack.Screen</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Contact<span class="token punctuation">&quot;</span></span> <span class="token attr-name">component</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>ContactScreen<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Stack.Navigator</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">NavigationContainer</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App
+</code></pre></div></details> <h4 id="header-options"><a href="#header-options" class="header-anchor">#</a> Header Options</h4> <p>The route name is used as the <strong>page title</strong> that appears in the header by default. If you want to customize it, you can add an <code>options</code> prop.</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Stack.Screen</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Home<span class="token punctuation">&quot;</span></span> <span class="token attr-name">component</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>HomeScreen<span class="token punctuation">}</span></span> <span class="token attr-name">options</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>title<span class="token operator">:</span> <span class="token string">'Hello'</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">/&gt;</span></span>
+</code></pre></div><p>You can set the background style and text colour for the header using the <code>headerStyle</code> and <code>headerTintColor</code> props.</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Stack.Screen</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Home<span class="token punctuation">&quot;</span></span> <span class="token attr-name">component</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>HomeScreen<span class="token punctuation">}</span></span> <span class="token attr-name">options</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">'Hello'</span><span class="token punctuation">,</span>
+  headerStyle<span class="token operator">:</span> <span class="token punctuation">{</span> backgroundColor<span class="token operator">:</span> <span class="token string">'indigo'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  headerTintColor<span class="token operator">:</span> <span class="token string">'white'</span>
+<span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">/&gt;</span></span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">Remember to adjust the status bar text</p> <p>You can use the React Native <a href="https://reactnative.dev/docs/statusbar" target="_blank" rel="noopener noreferrer">StatusBar<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> component's <code>barStyle</code> prop to adjust the system status text to <code>light-content</code> or <code>dark-content</code> to fit your app's colour scheme. e.g.</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">StatusBar</span></span> <span class="token attr-name">bar</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">Style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value">light-content</span><span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre></div></div> <h4 id="default-header-options"><a href="#default-header-options" class="header-anchor">#</a> Default Header Options</h4> <p>It is great to be able to change individual header display properties, but most of the time you will want a consistent look across your application. Rather than repeating the config options on every screen, you can set the default options to apply to all screens using the <code>screenOptions</code> prop on the <code>Stack.Navigator</code> component. e.g.</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Stack.Navigator</span></span>
+  <span class="token attr-name">screenOptions</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+    headerStyle<span class="token operator">:</span> <span class="token punctuation">{</span>backgroundColor<span class="token operator">:</span> <span class="token string">'indigo'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    headerTintColor<span class="token operator">:</span> <span class="token string">'white'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+<span class="token punctuation">&gt;</span></span><span class="token plain-text">
+</span></code></pre></div><p>Any default settings can be overridden by the <code>options</code> prop on an individual <code>Stack.Screen</code> component as needed.</p> <h4 id="how-to-move-between-screens"><a href="#how-to-move-between-screens" class="header-anchor">#</a> How to move between screens</h4> <p>Each screen component receives two navigator related objects as props: <code>navigation</code>, and <code>route</code>. In order to change screens you need to tell the navigation object which new screen to display using the <code>navigation.navigate()</code> method. This would typically be in an <code>onPress</code> event handler. The first argument to the <code>navigate()</code> method is the name (as a string) of a screen defined in the <code>Stack.Navigator</code> - in our example that is in the App component.</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Read more about us<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onPress</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>navigation<span class="token punctuation">.</span><span class="token function">navigate</span><span class="token punctuation">(</span><span class="token string">'About'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Contact us<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onPress</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>navigation<span class="token punctuation">.</span><span class="token function">navigate</span><span class="token punctuation">(</span><span class="token string">'Contact'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+</span></code></pre></div><h5 id="going-back"><a href="#going-back" class="header-anchor">#</a> Going back</h5> <p>There are several options here.</p> <ol><li>The header will automatically add a <strong>&lt; Back</strong> button if the user is not on the first page of the stack.</li> <li>The hardware back button on Android devices is automatically configured to go back one step in the stack.</li> <li>You can programmatically pop the last screen off the stack with <code>navigation.goBack()</code> in an onPress handler.</li> <li>You can navigate directly to any earlier screen in the stack (skipping intermediate screens) by using the <code>navigation.navigate()</code> method. e.g.</li></ol> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Home<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onPress</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>navigation<span class="token punctuation">.</span><span class="token function">navigate</span><span class="token punctuation">(</span><span class="token string">'Home'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+</span></code></pre></div><h5 id="passing-route-params"><a href="#passing-route-params" class="header-anchor">#</a> Passing route params</h5> <p>If you need to pass parameters, like on object id, to the screen component then you can pass an object as the second argument with <em>key:value</em> pairs.</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Read book review<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onPress</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>navigation<span class="token punctuation">.</span><span class="token function">navigate</span><span class="token punctuation">(</span><span class="token string">'Review'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>id<span class="token operator">:</span> book<span class="token punctuation">.</span>id<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+</span></code></pre></div><p>Then in the screen component you can access these parameters via the <code>props.route.params</code> object. So, for the book review example above, the screen component might look like this ...</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>ScrollView<span class="token punctuation">,</span> Text<span class="token punctuation">,</span> View<span class="token punctuation">,</span> StyleSheet<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-native'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">BookReviewScreen</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>route<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>book<span class="token punctuation">,</span> setBook<span class="token punctuation">]</span> <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  React<span class="token punctuation">.</span><span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// fetch book using route.params.id</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>route<span class="token punctuation">.</span>params<span class="token punctuation">.</span>id<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token comment">/* some JSX */</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">Do not pass complex objects</p> <p>The route.params are meant to pass simple key value pairs. Think of passing URL parameter. This allows your app to support sharing deep links for higher user engagement.</p></div> <h2 id="lab-exercise"><a href="#lab-exercise" class="header-anchor">#</a> Lab Exercise</h2> <p>It is time to practice what you have learned. Build a simple two page Summary/Detail application. The first page will use the <a href="https://docs.expo.io/versions/v39.0.0/react-native/flatlist/" target="_blank" rel="noopener noreferrer">FlatList<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> component to display a list of movie titles and the year it was released. Tapping on a movie list item should navigate to a new page displaying the detailed information for that one movie.</p> <p>You will need the <a href="https://docs.expo.io/versions/v39.0.0/react-native/touchableopacity/" target="_blank" rel="noopener noreferrer">TouchableOpacity<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> component to make the list items pressable.</p> <p>You will need to pass the movie <code>episode_id</code> as a route parameter.</p> <p>You will need to create a context provider for the movie data, so that it is available to both the movie list screen and the movie detail screen.</p> <p>Don't worry about fetching data from an API for this exercise. Simply import the array of movie data from this module.</p> <details class="custom-block details"><summary>movieData.js</summary> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">const</span> movieData <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">'A New Hope'</span><span class="token punctuation">,</span>
+    episode_id<span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    opening_crawl<span class="token operator">:</span>
+      <span class="token string">&quot;It is a period of civil war.\r\nRebel spaceships, striking\r\nfrom a hidden base, have won\r\ntheir first victory against\r\nthe evil Galactic Empire.\r\n\r\nDuring the battle, Rebel\r\nspies managed to steal secret\r\nplans to the Empire's\r\nultimate weapon, the DEATH\r\nSTAR, an armored space\r\nstation with enough power\r\nto destroy an entire planet.\r\n\r\nPursued by the Empire's\r\nsinister agents, Princess\r\nLeia races home aboard her\r\nstarship, custodian of the\r\nstolen plans that can save her\r\npeople and restore\r\nfreedom to the galaxy....&quot;</span><span class="token punctuation">,</span>
+    director<span class="token operator">:</span> <span class="token string">'George Lucas'</span><span class="token punctuation">,</span>
+    producer<span class="token operator">:</span> <span class="token string">'Gary Kurtz, Rick McCallum'</span><span class="token punctuation">,</span>
+    release_date<span class="token operator">:</span> <span class="token string">'1977-05-25'</span><span class="token punctuation">,</span>
+    characters<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/people/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/4/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/5/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/6/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/7/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/8/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/9/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/10/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/12/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/13/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/14/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/15/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/16/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/18/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/19/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/81/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    planets<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/planets/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/3/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    starships<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/starships/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/5/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/9/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/10/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/11/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/12/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/13/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    vehicles<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/4/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/6/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/7/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/8/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    species<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/species/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/4/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/5/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    created<span class="token operator">:</span> <span class="token string">'2014-12-10T14:23:31.880000Z'</span><span class="token punctuation">,</span>
+    edited<span class="token operator">:</span> <span class="token string">'2014-12-20T19:49:45.256000Z'</span><span class="token punctuation">,</span>
+    url<span class="token operator">:</span> <span class="token string">'http://swapi.dev/api/films/1/'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">'The Empire Strikes Back'</span><span class="token punctuation">,</span>
+    episode_id<span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    opening_crawl<span class="token operator">:</span>
+      <span class="token string">'It is a dark time for the\r\nRebellion. Although the Death\r\nStar has been destroyed,\r\nImperial troops have driven the\r\nRebel forces from their hidden\r\nbase and pursued them across\r\nthe galaxy.\r\n\r\nEvading the dreaded Imperial\r\nStarfleet, a group of freedom\r\nfighters led by Luke Skywalker\r\nhas established a new secret\r\nbase on the remote ice world\r\nof Hoth.\r\n\r\nThe evil lord Darth Vader,\r\nobsessed with finding young\r\nSkywalker, has dispatched\r\nthousands of remote probes into\r\nthe far reaches of space....'</span><span class="token punctuation">,</span>
+    director<span class="token operator">:</span> <span class="token string">'Irvin Kershner'</span><span class="token punctuation">,</span>
+    producer<span class="token operator">:</span> <span class="token string">'Gary Kurtz, Rick McCallum'</span><span class="token punctuation">,</span>
+    release_date<span class="token operator">:</span> <span class="token string">'1980-05-17'</span><span class="token punctuation">,</span>
+    characters<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/people/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/4/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/5/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/10/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/13/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/14/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/18/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/20/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/21/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/22/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/23/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/24/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/25/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/26/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    planets<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/planets/4/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/5/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/6/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/27/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    starships<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/starships/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/10/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/11/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/12/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/15/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/17/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/21/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/22/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/23/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    vehicles<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/8/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/14/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/16/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/18/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/19/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/20/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    species<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/species/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/6/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/7/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    created<span class="token operator">:</span> <span class="token string">'2014-12-12T11:26:24.656000Z'</span><span class="token punctuation">,</span>
+    edited<span class="token operator">:</span> <span class="token string">'2014-12-15T13:07:53.386000Z'</span><span class="token punctuation">,</span>
+    url<span class="token operator">:</span> <span class="token string">'http://swapi.dev/api/films/2/'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">'Return of the Jedi'</span><span class="token punctuation">,</span>
+    episode_id<span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+    opening_crawl<span class="token operator">:</span>
+      <span class="token string">'Luke Skywalker has returned to\r\nhis home planet of Tatooine in\r\nan attempt to rescue his\r\nfriend Han Solo from the\r\nclutches of the vile gangster\r\nJabba the Hutt.\r\n\r\nLittle does Luke know that the\r\nGALACTIC EMPIRE has secretly\r\nbegun construction on a new\r\narmored space station even\r\nmore powerful than the first\r\ndreaded Death Star.\r\n\r\nWhen completed, this ultimate\r\nweapon will spell certain doom\r\nfor the small band of rebels\r\nstruggling to restore freedom\r\nto the galaxy...'</span><span class="token punctuation">,</span>
+    director<span class="token operator">:</span> <span class="token string">'Richard Marquand'</span><span class="token punctuation">,</span>
+    producer<span class="token operator">:</span> <span class="token string">'Howard G. Kazanjian, George Lucas, Rick McCallum'</span><span class="token punctuation">,</span>
+    release_date<span class="token operator">:</span> <span class="token string">'1983-05-25'</span><span class="token punctuation">,</span>
+    characters<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/people/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/4/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/5/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/10/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/13/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/14/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/16/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/18/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/20/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/21/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/22/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/25/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/27/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/28/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/29/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/30/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/31/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/45/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    planets<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/planets/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/5/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/7/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/8/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/9/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    starships<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/starships/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/10/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/11/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/12/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/15/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/17/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/22/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/23/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/27/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/28/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/29/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    vehicles<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/8/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/16/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/18/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/19/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/24/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/25/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/26/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/30/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    species<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/species/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/5/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/6/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/8/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/9/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/10/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/15/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    created<span class="token operator">:</span> <span class="token string">'2014-12-18T10:39:33.255000Z'</span><span class="token punctuation">,</span>
+    edited<span class="token operator">:</span> <span class="token string">'2014-12-20T09:48:37.462000Z'</span><span class="token punctuation">,</span>
+    url<span class="token operator">:</span> <span class="token string">'http://swapi.dev/api/films/3/'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">'The Phantom Menace'</span><span class="token punctuation">,</span>
+    episode_id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    opening_crawl<span class="token operator">:</span>
+      <span class="token string">'Turmoil has engulfed the\r\nGalactic Republic. The taxation\r\nof trade routes to outlying star\r\nsystems is in dispute.\r\n\r\nHoping to resolve the matter\r\nwith a blockade of deadly\r\nbattleships, the greedy Trade\r\nFederation has stopped all\r\nshipping to the small planet\r\nof Naboo.\r\n\r\nWhile the Congress of the\r\nRepublic endlessly debates\r\nthis alarming chain of events,\r\nthe Supreme Chancellor has\r\nsecretly dispatched two Jedi\r\nKnights, the guardians of\r\npeace and justice in the\r\ngalaxy, to settle the conflict....'</span><span class="token punctuation">,</span>
+    director<span class="token operator">:</span> <span class="token string">'George Lucas'</span><span class="token punctuation">,</span>
+    producer<span class="token operator">:</span> <span class="token string">'Rick McCallum'</span><span class="token punctuation">,</span>
+    release_date<span class="token operator">:</span> <span class="token string">'1999-05-19'</span><span class="token punctuation">,</span>
+    characters<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/people/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/10/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/11/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/16/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/20/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/21/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/32/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/33/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/34/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/35/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/36/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/37/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/38/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/39/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/40/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/41/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/42/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/43/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/44/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/46/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/47/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/48/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/49/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/50/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/51/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/52/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/53/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/54/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/55/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/56/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/57/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/58/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/59/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    planets<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/planets/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/8/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/9/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    starships<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/starships/31/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/32/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/39/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/40/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/41/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    vehicles<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/33/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/34/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/35/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/36/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/37/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/38/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/42/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    species<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/species/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/6/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/11/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/12/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/13/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/14/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/15/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/16/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/17/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/18/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/19/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/20/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/21/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/22/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/23/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/24/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/25/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/26/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/27/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    created<span class="token operator">:</span> <span class="token string">'2014-12-19T16:52:55.740000Z'</span><span class="token punctuation">,</span>
+    edited<span class="token operator">:</span> <span class="token string">'2014-12-20T10:54:07.216000Z'</span><span class="token punctuation">,</span>
+    url<span class="token operator">:</span> <span class="token string">'http://swapi.dev/api/films/4/'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">'Attack of the Clones'</span><span class="token punctuation">,</span>
+    episode_id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    opening_crawl<span class="token operator">:</span>
+      <span class="token string">'There is unrest in the Galactic\r\nSenate. Several thousand solar\r\nsystems have declared their\r\nintentions to leave the Republic.\r\n\r\nThis separatist movement,\r\nunder the leadership of the\r\nmysterious Count Dooku, has\r\nmade it difficult for the limited\r\nnumber of Jedi Knights to maintain \r\npeace and order in the galaxy.\r\n\r\nSenator Amidala, the former\r\nQueen of Naboo, is returning\r\nto the Galactic Senate to vote\r\non the critical issue of creating\r\nan ARMY OF THE REPUBLIC\r\nto assist the overwhelmed\r\nJedi....'</span><span class="token punctuation">,</span>
+    director<span class="token operator">:</span> <span class="token string">'George Lucas'</span><span class="token punctuation">,</span>
+    producer<span class="token operator">:</span> <span class="token string">'Rick McCallum'</span><span class="token punctuation">,</span>
+    release_date<span class="token operator">:</span> <span class="token string">'2002-05-16'</span><span class="token punctuation">,</span>
+    characters<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/people/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/6/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/7/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/10/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/11/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/20/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/21/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/22/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/33/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/35/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/36/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/40/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/43/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/46/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/51/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/52/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/53/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/58/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/59/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/60/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/61/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/62/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/63/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/64/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/65/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/66/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/67/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/68/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/69/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/70/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/71/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/72/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/73/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/74/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/75/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/76/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/77/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/78/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/82/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    planets<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/planets/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/8/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/9/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/10/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/11/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    starships<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/starships/21/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/32/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/39/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/43/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/47/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/48/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/49/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/52/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/58/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    vehicles<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/4/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/44/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/45/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/46/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/50/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/51/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/53/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/54/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/55/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/56/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/57/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    species<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/species/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/6/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/12/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/13/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/15/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/28/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/29/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/30/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/31/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/32/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/33/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/34/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/35/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    created<span class="token operator">:</span> <span class="token string">'2014-12-20T10:57:57.886000Z'</span><span class="token punctuation">,</span>
+    edited<span class="token operator">:</span> <span class="token string">'2014-12-20T20:18:48.516000Z'</span><span class="token punctuation">,</span>
+    url<span class="token operator">:</span> <span class="token string">'http://swapi.dev/api/films/5/'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">'Revenge of the Sith'</span><span class="token punctuation">,</span>
+    episode_id<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    opening_crawl<span class="token operator">:</span>
+      <span class="token string">'War! The Republic is crumbling\r\nunder attacks by the ruthless\r\nSith Lord, Count Dooku.\r\nThere are heroes on both sides.\r\nEvil is everywhere.\r\n\r\nIn a stunning move, the\r\nfiendish droid leader, General\r\nGrievous, has swept into the\r\nRepublic capital and kidnapped\r\nChancellor Palpatine, leader of\r\nthe Galactic Senate.\r\n\r\nAs the Separatist Droid Army\r\nattempts to flee the besieged\r\ncapital with their valuable\r\nhostage, two Jedi Knights lead a\r\ndesperate mission to rescue the\r\ncaptive Chancellor....'</span><span class="token punctuation">,</span>
+    director<span class="token operator">:</span> <span class="token string">'George Lucas'</span><span class="token punctuation">,</span>
+    producer<span class="token operator">:</span> <span class="token string">'Rick McCallum'</span><span class="token punctuation">,</span>
+    release_date<span class="token operator">:</span> <span class="token string">'2005-05-19'</span><span class="token punctuation">,</span>
+    characters<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/people/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/4/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/5/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/6/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/7/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/10/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/11/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/12/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/13/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/20/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/21/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/33/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/35/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/46/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/51/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/52/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/53/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/54/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/55/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/56/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/58/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/63/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/64/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/67/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/68/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/75/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/78/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/79/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/80/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/81/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/82/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/people/83/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    planets<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/planets/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/5/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/8/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/9/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/12/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/13/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/14/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/15/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/16/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/17/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/18/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/planets/19/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    starships<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/starships/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/32/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/48/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/59/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/61/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/63/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/64/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/65/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/66/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/68/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/74/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/starships/75/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    vehicles<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/33/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/50/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/53/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/56/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/60/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/62/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/67/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/69/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/70/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/71/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/72/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/73/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/vehicles/76/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    species<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'http://swapi.dev/api/species/1/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/2/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/3/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/6/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/15/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/19/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/20/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/23/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/24/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/25/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/26/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/27/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/28/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/29/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/30/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/33/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/34/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/35/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/36/'</span><span class="token punctuation">,</span>
+      <span class="token string">'http://swapi.dev/api/species/37/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    created<span class="token operator">:</span> <span class="token string">'2014-12-20T18:49:38.403000Z'</span><span class="token punctuation">,</span>
+    edited<span class="token operator">:</span> <span class="token string">'2014-12-20T20:47:52.073000Z'</span><span class="token punctuation">,</span>
+    url<span class="token operator">:</span> <span class="token string">'http://swapi.dev/api/films/6/'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div></details> <div class="custom-block tip"><p class="custom-block-title">Tip</p> <p>Set-up the basic navigation first. Then add the movie data.</p></div> <p>Last, add the <code>SafeAreaContext</code> to the App component and the <code>SafeAreaView</code> to the screen components.</p> <details class="custom-block details"><summary>Solution</summary> <p><a href="https://github.com/rlmckenney/mad9135-stack-navigation-demo" target="_blank" rel="noopener noreferrer">rlmckenney/mad9135-stack-navigation-demo<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></details> <h2 id="resources"><a href="#resources" class="header-anchor">#</a> Resources</h2> <ul><li><a href="https://reactnavigation.org/docs/getting-started" target="_blank" rel="noopener noreferrer">React Navigation Fundamentals<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: :</span> <span class="time">11/27/2020, 4:13:49 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/F2020/modules/week10/02-the-same-but-different/" class="prev">
+        10.2 What's Different
+      </a></span> <span class="next"><a href="/F2020/modules/week11/02-nested-navigation/">
+        11.2 Nested Navigation
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/F2020/assets/js/app.71c50f4b.js" defer></script><script src="/F2020/assets/js/2.ad437195.js" defer></script><script src="/F2020/assets/js/37.9d876e07.js" defer></script><script src="/F2020/assets/js/6.2620568a.js" defer></script>
+  </body>
+</html>
